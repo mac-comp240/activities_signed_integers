@@ -12,14 +12,14 @@ void task2();
 void task3();
 
 int main() {
-	// Task 1: See TODO in helper function
-	task1();
+    // Task 1: See TODO in helper function
+    task1();
 
-	// Task 2: Uncomment to run this task code, see TODO in helper function
-	task2();
-	
-	// Task 3: UNCOMMENT THIS ONLY WHEN READY TO WORK ON THIS PART!
-	task3();    
+    // Task 2: Uncomment to run this task code, see TODO in helper function
+    task2();
+
+    // Task 3: UNCOMMENT THIS ONLY WHEN READY TO WORK ON THIS PART!
+    task3();    
 }
 
 /* 
@@ -27,35 +27,35 @@ int main() {
  * in decimal, hex, and binary, and does similarly for unsigned shorts
  */
 void task1() {
-	    // some limits: it's best to see what our mchine will give us
+    // some limits: it's best to see what our mchine will give us
     printf("short is %zu bytes wide\n", sizeof(short));
-	printf("min value of a short is: %hd\n", SHRT_MIN);
-	printf("max value of a short is: %hd\n", SHRT_MAX);
+    printf("min value of a short is: %hd\n", SHRT_MIN);
+    printf("max value of a short is: %hd\n", SHRT_MAX);
 	
-	////////////////  two's complement values
-	printf("\nA few two's complement values\n");
+    ////////////////  two's complement values
+    printf("\nA few two's complement values\n");
 	
     short tmp = -32767;
 	
     char * bin_str;
-	bin_str = short_to_bin_str(tmp);
-	printf("%hd\t%04hx\t%s\n", tmp, tmp, bin_str);
-	free(bin_str);
-	
-	tmp = SHRT_MIN;
-	bin_str = short_to_bin_str(tmp); 
+    bin_str = short_to_bin_str(tmp);
     printf("%hd\t%04hx\t%s\n", tmp, tmp, bin_str);
-	free(bin_str);
+    free(bin_str);
+
+    tmp = SHRT_MIN;
+    bin_str = short_to_bin_str(tmp); 
+    printf("%hd\t%04hx\t%s\n", tmp, tmp, bin_str);
+    free(bin_str);
 	
-	// TODO: Try some other values here
+    // TODO: Try some other values here
 
 
-	////////////////  unsigned integer values
-	printf("\nA few unsigned short integer values\n");
+    ////////////////  unsigned integer values
+    printf("\nA few unsigned short integer values\n");
 
-	unsigned short utmp;
+    unsigned short utmp;
 
-	// TODO: try some values for utmp, printing decimal and binary
+    // TODO: try some values for utmp, printing decimal and binary
 
 }
 
@@ -101,10 +101,9 @@ void task3() {
 
 	printf("decimal\thex\tbinary\n");
 
-    for (i=-128; i<=127; i++) {	
+	for (i=-128; i<=127; i++) {	
 		bin = char_to_bin_str(i);
 		printf("%hhd\t%02hhx\t%s\n", i, i, bin);
 		free(bin);
-
 	}
 }
