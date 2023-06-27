@@ -1,5 +1,5 @@
 /*
- * Data activity 4
+ * Activity 5
  */
 #include <stdio.h>
 #include <stdlib.h>
