@@ -28,11 +28,24 @@ int main() {
     printf("%hd\t%04hx\t%s\n", tmp, tmp, bin_str);
 	free(bin_str);
 	
+	// TODO: (Task 1) Try some other values here
+	// TODO: (Task 1) Try writing a loop to print all values from SHRT_MIN to SHRT_MAX
+
+
 	////////////////  unsigned integer values
 	printf("\nA few unsigned short integer values\n");
-	// TODO: you add some unsigned values here using this declared variable:
+
 	unsigned short utmp;
+
+	// TODO: (Task 1) you add some unsigned values here using this declared variable:
 	
+	// TODO: (Task 2) Uncomment the code below and try it
+	// Convert from smaller type to larger type
+	short a = 2023;
+
+	// short int v = -12345;
+	// unsigned short uv = (unsigned short) v;
+	// printf("v = %hd, uv = %hu\n", v, uv);
 	
 	///////////////////////////////// Part 3- keep commented until you work on this later
 	/* create the hexidecimal table for all 1-byte signed numbers 

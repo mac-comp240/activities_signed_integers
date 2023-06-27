@@ -1,13 +1,31 @@
-# Data Activity 4: Getting deep into integers
+# Activity 5: Getting deep into integers
 
 In this activity, you are provided working source code. You will modify the code
 to illustrate the representation principles of signed vs. unsigned integers,
 widening and narrowing during casting, and the limits/boundaries of different
 integer data types.
 
-## 1: Differences between signed and unsigned
+## Provided Code
 
-Recall from Data Activity 1 each integer type has max and min values determined
+There are two code files, one header file, and a Makefile for this activity:
+
+- `test_c.c`
+    - the main source file with three tasks defined in it
+- `binary_convert.c`
+    - a library file containing functions to convert integers to binary strings
+- `binary_convert.h`
+    - a header file for the library
+- `Makefile`
+    - a short makefile to automate the compilation process
+
+You will only need to edit `test_c.c`. Note that we are reusing the library
+of conversion functions `binary_convert.c` from the previous activity.
+
+## Your Tasks
+
+### Task 1: Differences between signed and unsigned
+
+Recall from Activity 2 each integer type has max and min values determined
 by how many bytes it has, and that these values can be referenced from named
 constants in `limits.h`. We will now examine the differences between the
 limits of unsigned and signed numbers.
@@ -16,28 +34,27 @@ Note that for this activity, the Makefile has an example of building a program w
 
 ### Examining two's complement (signed) and unsigned representations of integers.
 
-Build and run the demo code in `test_tc.c`. We are going to first consider the C
-data type short, whose size in bytes and max and min limits are printed with the
+- Read the code in `test_tc.c,` refamiliariz yourself with the functions in
+`binary_convert.c`, and look at the `Makefile`.
+
+- Build and run the demo code in `test_tc.c`. We are going to first consider the C
+data type `short`, whose size in bytes and max and min limits are printed with the
 code at the beginning of `main()`. You may wish to revisit the [printf format
 reference](http://www.cplusplus.com/reference/cstdio/printf/).
 
-Add other example values. Print their binary strings and verify that you
+- Add other example values. Print their binary strings and verify that you
 understand the bit patterns.
 
-Now, try it with an unsigned short. Using `limits.h`, print the binary
+- Now, try it with an unsigned short. Using `limits.h`, print the binary
 representation of the largest value for this data type.
 
-## 2: Casting
+## 2: Casting between types
 
-Now consider casting from short to unsigned short, as in the following code
-(given in section 2.2.4 of your book and repeated here):
+Your reading discussed "sign extension," where we might cast a number from a smaller type
+to a larger one. 
 
 ```
-	short int v = -12345;
-
-	unsigned short uv = (unsigned short) v;
-
-	printf("v = %hd, uv = %hu\n", v, uv);
+	
 ```
 
 Try this code and print out the underlying binary representations of u and v
