@@ -19,7 +19,9 @@ int main() {
     task2();
 
     // Task 3: UNCOMMENT THIS ONLY WHEN READY TO WORK ON THIS PART!
-    task3();    
+    task3();
+
+    return 0;    
 }
 
 /* 
