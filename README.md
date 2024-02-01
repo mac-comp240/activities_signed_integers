@@ -32,7 +32,7 @@ limits of unsigned and signed numbers.
 
 Note that for this activity, the Makefile has an example of building a program whose name is different than the .c file used to build it.
 
-- Read the code in `test_tc.c,` refamiliariz yourself with the functions in
+- Read the code in `test_tc.c,` refamiliarize yourself with the functions in
 `binary_convert.c`, and look at the `Makefile`.
 
 - Build and run the demo code in `test_tc.c`. We are going to first consider the C
