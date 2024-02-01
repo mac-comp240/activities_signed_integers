@@ -103,7 +103,7 @@ void task3() {
 
     printf("decimal\thex\tbinary\n");
 
-    for (i=-128; i<=127; i++) {     
+    for (i=-64; i<=63; i++) {     
         bin = char_to_bin_str(i);
         printf("%hhd\t%02hhx\t%s\n", i, i, bin);
         free(bin);
