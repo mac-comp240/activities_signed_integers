@@ -32,10 +32,10 @@ limits of unsigned and signed numbers.
 
 Note that for this activity, the Makefile has an example of building a program whose name is different than the .c file used to build it.
 
-- Read the code in `test_tc.c,` refamiliarize yourself with the functions in
+- Read the code in `test_c.c,` refamiliarize yourself with the functions in
 `binary_convert.c`, and look at the `Makefile`.
 
-- Build and run the demo code in `test_tc.c`. We are going to first consider the C
+- Build and run the demo code in `test_c.c`. We are going to first consider the C
 data type `short`, whose size in bytes and max and min limits are printed with the
 code at the beginning of `task1`. You may wish to revisit the [printf format
 reference](http://www.cplusplus.com/reference/cstdio/printf/).
@@ -91,12 +91,12 @@ Read through the output prouced. Work through in your mind what is happening whe
 infinite loop, such as -64 to +63. After building with make, you can run the
 program this way to save what is printed:
 
-	./twos_comp > tc_out
+	./twos_comp > twos_comp
 
-This puts the output into a file called `tc_out`. You can view that file using a
+This puts the output into a file called `twos_comp`. You can view that file using a
 program called less:
 
-	less tc_out
+	less twos_comp
 
 Hitting the Q key will quit out of less. Space bar scrolls down, control-b or
 control-u goes back up.
