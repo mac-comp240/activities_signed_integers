@@ -91,12 +91,12 @@ Read through the output prouced. Work through in your mind what is happening whe
 infinite loop, such as -64 to +63. After building with make, you can run the
 program this way to save what is printed:
 
-	./twos_comp > twos_comp
+	./twos_comp > tc_out
 
 This puts the output into a file called `twos_comp`. You can view that file using a
 program called less:
 
-	less twos_comp
+	less tc_out
 
 Hitting the Q key will quit out of less. Space bar scrolls down, control-b or
 control-u goes back up.
