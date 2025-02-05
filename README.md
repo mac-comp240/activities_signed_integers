@@ -93,7 +93,7 @@ program this way to save what is printed:
 
 	./twos_comp > tc_out
 
-This puts the output into a file called `twos_comp`. You can view that file using a
+This puts the output into a file called `tc_out`. You can view that file using a
 program called less:
 
 	less tc_out
